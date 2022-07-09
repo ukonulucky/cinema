@@ -1,0 +1,58 @@
+.MovieList {
+  background-color: var(--main-color);
+}
+
+.MovieList .listTitle {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0 0.8rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  word-spacing: 15px;
+  margin-top: 1rem;
+}
+
+.MovieList .wrapper {
+  margin-top: 10;
+  position: relative;
+}
+
+.MovieList .wrapper .sliderArrow {
+  position: absolute;
+  color: white;
+  width: 50px;
+  height: 100%;
+  margin: auto;
+  z-index: 99;
+  background-color: rgba(22, 22, 22, 0.5);
+}
+
+.MovieList .wrapper .sliderArrow.left {
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.MovieList .wrapper .sliderArrow.right {
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.MovieList .wrapper .listContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: 50px;
+}
+/*# sourceMappingURL=MoviesList.css.map */

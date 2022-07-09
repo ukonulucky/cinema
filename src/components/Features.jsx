@@ -3,9 +3,22 @@ import React from 'react'
 import cinema from "../images/cinema.jpg"
 import action from "../images/action.jpeg"
 import "../styles/features.css"
-function Features() {
+function Features({ type }) {
   return (
       <div className="features">
+        {type &&     <div className="category">
+ 
+                  <span>{type === "movie" ? "Movie" : "Series"}</span>   <select name="genre" id="genre">
+                  <option>Genrie</option>
+                  <option value="adventure">Adventure</option>
+                  <option value="comedy">Comedy</option>
+                  <option value="crime">Crime</option>
+                  <option value="fantasy">Fantasy</option>
+                  <option value="historical">Historical</option>
+                  <option value="horror">Horror</option>
+                </select>  </div> }
+              
+          
           <img src={cinema} alt="cinema" />
           <div className="info">
               <div className="details">
