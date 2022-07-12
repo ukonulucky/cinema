@@ -1,6 +1,105 @@
 .list {
-  width: 225px;
-  height: 120px;
-  background-color: white;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 10px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  background-color: var(--main-color);
+}
+
+.list img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.list:hover {
+  border-radius: 10px;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  margin: 0 30px;
+  box-shadow: 0px 2px 16px -1px rgba(222, 222, 222, 0.37);
+  -webkit-box-shadow: 0px 2px 16px -1px rgba(222, 222, 222, 0.37);
+  -moz-box-shadow: 0px 2px 16px -1px rgba(222, 222, 222, 0.37);
+}
+
+.list:hover video {
+  width: 100%;
+  height: 250px;
+  z-index: 55;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.list:hover img {
+  display: none;
+}
+
+.list .listInfo {
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+
+.list .listInfo .listItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list .listInfo .listItem .icon {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.list .listInfo .itemInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  color: grey;
+  font-size: 16px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.list .listInfo .itemInfo .limit {
+  border: 1px solid grey;
+  padding: 1px 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list .listInfo .desc {
+  font-size: 13px;
+}
+
+.list .listInfo .genre {
+  color: lightgray;
+  font-size: 14px;
 }
 /*# sourceMappingURL=ListItem.css.map */

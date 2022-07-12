@@ -18,7 +18,6 @@ function Navbar() {
           window.removeEventListener('scroll', handleScroll);
         };
       }, []);
-      console.log(isScrolled)
   return (
       <div className={isScrolled === true  ? "navbar2" : "navbar" }>
           <div className="container">

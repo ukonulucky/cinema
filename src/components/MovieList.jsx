@@ -1,27 +1,31 @@
 import { ArrowBackIosOutlined, ArrowForwardIosOutlined } from '@mui/icons-material'
-import React from 'react'
+import React, { useRef } from 'react'
 import "../styles/MoviesList.css"
-import ListItem from "../components/ListItem"
+import ListSlick from "../components/ListSlick"
+
+
 function MovieList() {
+ const eleRef = useRef()
+
+
+    const handleClick = (direction) => {
+        if (direction === "left") {
+       const distance =   eleRef.current.getBoundingClientRect().x - 50
+            eleRef.current.style.transform = `translateX(${(-233 + distance)}px)`
+        }
+        if (direction === "right") {
+            const distance =   eleRef.current.getBoundingClientRect().x - 50
+            eleRef.current.style.transform = `translateX(${(233 + distance)}px)`
+        }
+    }
   return (
 
       <div className="MovieList">
           <div className="listTitle"> Continue to Watch</div>
           <div className="wrapper">
-              <ArrowBackIosOutlined  className="sliderArrow left"/>
-              <div className="listContainer">
-                  <ListItem />
-                  <ListItem />
-                  <ListItem />
-                  <ListItem />
-                  <ListItem />
-                  <ListItem />
-                  <ListItem />
-                  <ListItem />
-                  <ListItem />
-                  <ListItem />
+          <div className="listContainer">
+                  <ListSlick />
               </div>
-              <ArrowForwardIosOutlined className="sliderArrow right" />
           </div>
     </div>
   )

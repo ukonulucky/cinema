@@ -13,34 +13,33 @@
         margin-top: 1rem;
     }
     .wrapper{
-        margin-top: 10;
         position: relative;
-        .sliderArrow{
+        margin-top: 10;
+        button::before{
+            font-size: 2rem;
+        }
+        .listContainer{
+        .slick-arrow{
             position: absolute;
             color: white;
             width: 50px;
             height: 100%;
             margin: auto;
             z-index: 99;
+            cursor: pointer;
             background-color:rgba(22,22,22,0.5);
-            &.left{
+        }
+            .slick-prev{
                 left: 0;
                 top: 0;
                 bottom: 0;
+                top: 150px;
             }
-            &.right{
+            .slick-next{
                 right: 0;
-                top: 0;
+                top: 150px;
                 bottom: 0;
             }
-        }
-
-        .listContainer{
-            display: flex;
-            align-items: center;
-            column-gap: 0.5rem;
-            width: max-content;
-            margin-left: 50px;
         }
     }
 

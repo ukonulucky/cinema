@@ -4,16 +4,17 @@ import pic from "../images/software engineer3.jpg"
 import Navbar from './Navbar'
 import Features from './Features'
 import MovieList from './MovieList'
+import Movie from './Movies/Movie'
 function Hompage() {
- 
   return (
       <div className="home">
       <Navbar />
-      <Features type="movie" />
+       <Features type="movie" /> 
       <MovieList />
       <MovieList />
       <MovieList />
-      
+    
+
     </div>
   )
 }
