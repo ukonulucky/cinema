@@ -81,6 +81,9 @@
 .navbar .container .right .profile .options {
   display: none;
   position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   background-color: var(--main-color);
 }
 
@@ -88,6 +91,17 @@
   cursor: pointer;
   text-align: center;
   padding: 5px 10px;
+}
+
+.navbar .container .right .profile .options span:hover {
+  background-color: grey;
+  color: white;
+  font-size: 1rem;
+}
+
+.navbar .container .right .profile .options span a {
+  color: white;
+  text-decoration: none;
 }
 
 .navbar .container .right .profile:hover .options {

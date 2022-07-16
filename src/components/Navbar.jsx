@@ -63,7 +63,11 @@ function Navbar() {
                       <ArrowDropDown className="icon" />
                       <div className="options">
                           <span>Settings</span>
-                          <span>Log out </span>
+                          <span>
+                              <Link to="/signin">
+                              Log out
+                              </Link>
+                          </span>
                       </div>
                 </div>
               </div>
