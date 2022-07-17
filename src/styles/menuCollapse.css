@@ -4,7 +4,6 @@
   top: 0;
   left: 0px;
   bottom: 0;
-  z-index: 999999999999;
 }
 
 #menucollapse .menuStyles {
@@ -42,6 +41,7 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  z-index: 9999999999999999999;
 }
 
 .logo img {

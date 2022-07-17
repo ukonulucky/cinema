@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Movie from './components/Movies/Movie';
 import Register from './components/Register';
 import SignIn from './components/SignIn';
+import MovieList from './components/MovieList';
 function App() {
   return (
       <Router>

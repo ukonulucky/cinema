@@ -9,7 +9,7 @@ import MenuCollapsed from './MenuCollapsed'
 function Hompage() {
   return (
     <div className="home">
-      <div className="home_sidebar">
+       <div className="home_sidebar">
       <MenuCollapsed />
       </div>
       <div className="home_main">
@@ -18,8 +18,9 @@ function Hompage() {
      </div>
        <Features type="movie" /> 
       <MovieList />
-      <MovieList />
-      <MovieList />
+       <MovieList />
+      <MovieList /> 
+       <MovieList />
      </div>
     
     

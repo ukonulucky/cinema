@@ -99,7 +99,7 @@
           column-gap: 1rem;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 775px) {
   .features .category {
     left: calc(100vw - 250px);
     margin-left: auto;

@@ -33,7 +33,13 @@ const MenuCollapsed = () => {
         <ProSidebar collapsed={menuCollapse} className="menuStyles">
           <SidebarContent className="sidebar__content__header" >
             <Menu iconShape="square" className="sidebar__content__body">
-              <MenuItem  className="link" icon={<HomeOutlined />}  >
+              <MenuItem className="link" icon={<HomeOutlined
+              style={{
+                fontSize: 50,
+                  borderRadius: 10,
+                  backgroundColor: "black",
+                  color:"red"
+              }} />}  >
                 <Link to="/"
                   >
                       Homepage
@@ -41,7 +47,13 @@ const MenuCollapsed = () => {
               
               </MenuItem>
               <MenuItem className="link"
-               icon={     <ListOutlined />}>
+                icon={<ListOutlined
+                  style={{
+                    fontSize: 50,
+                    borderRadius: 10,
+                    backgroundColor: "black",
+                    color:"red"
+                  }} />}>
                 <Link to="/series"
                   
                  >
@@ -50,7 +62,12 @@ const MenuCollapsed = () => {
               
               </MenuItem>
               <MenuItem  className="link"
-               icon={     <MovieCreationOutlined />}>
+                icon={<MovieCreationOutlined style={{
+                  fontSize: 50,
+                  borderRadius: 10,
+                  backgroundColor: "black",
+                  color:"red"
+                }} />}>
                 <Link to="/movies"
                  
                  >
@@ -59,7 +76,14 @@ const MenuCollapsed = () => {
               
               </MenuItem>
               <MenuItem className="link"
-               icon={     <VolunteerActivismOutlined />}>
+                icon={<VolunteerActivismOutlined
+               
+                  style={{
+                    fontSize: 50,
+                  borderRadius: 10,
+                  backgroundColor: "black",
+                  color:"red"
+                  }} />}>
                 <Link to="/movies"
                   
                  >
@@ -68,7 +92,13 @@ const MenuCollapsed = () => {
               
               </MenuItem>
               <MenuItem className="link"
-               icon={     <NotificationsOutlined />}>
+               icon={     <NotificationsOutlined  style={{
+                fontSize: 50,
+                  borderRadius: 10,
+                  backgroundColor: "black",
+                  color:"red"
+                }}
+                />}>
                 <Link to="/movies"
                   
                  >
