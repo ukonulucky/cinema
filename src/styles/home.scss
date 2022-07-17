@@ -1,4 +1,22 @@
 .home{
     overflow: hidden;
     background-color:var(--main-color);
+    display: flex;
+    flex-direction: row;
+    .home_sidebar{
+        display: none;
+        @media  screen and (max-width:790px) {
+            display: block;
+            width: max-content;
+        }
+    }
+    .home_main{
+        flex:1;
+        .nav:nth-child(1){
+            @media screen and (max-width:760px) {
+                display: none;
+            }
+        }
+    }
 }
+

@@ -99,6 +99,14 @@
           column-gap: 1rem;
 }
 
+@media screen and (max-width: 760px) {
+  .features .category {
+    left: calc(100vw - 250px);
+    margin-left: auto;
+    width: 220px;
+  }
+}
+
 .features .category span {
   color: white;
   font-size: 1.5rem;

@@ -5,14 +5,23 @@ import Navbar from './Navbar'
 import Features from './Features'
 import MovieList from './MovieList'
 import Movie from './Movies/Movie'
+import MenuCollapsed from './MenuCollapsed'
 function Hompage() {
   return (
-      <div className="home">
-      <Navbar />
+    <div className="home">
+      <div className="home_sidebar">
+      <MenuCollapsed />
+      </div>
+      <div className="home_main">
+        <div className="nav">
+        <Navbar />
+     </div>
        <Features type="movie" /> 
       <MovieList />
       <MovieList />
       <MovieList />
+     </div>
+    
     
 
     </div>

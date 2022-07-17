@@ -13,6 +13,9 @@ function App() {
         <Route exact path="/movies" element={<Movie />} />
         <Route exact path="/register" element={<Register />} />
         <Route exact path="/SignIn" element={ <SignIn />} />
+        
+       
+        
         </Routes>
      </Router>
  
